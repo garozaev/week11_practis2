@@ -1,7 +1,7 @@
 
 h1 {
-    border: 3px solid greenyellow;
-    padding: 0 40vw 0 40vw;
+    /* /*border: 3px solid greenyellow; */
+    padding: 0 45vw 0 45vw;
 }
 
 .blok_todo {
@@ -15,7 +15,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
 .input_my_task {
@@ -45,7 +45,7 @@ h1 {
 }
 
 .task_list {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 
 .task {
@@ -53,9 +53,13 @@ h1 {
 }
 
 .task_finish {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 
 .task_ok {
+    color: green;
+}
+
+.li_fulfilled {
     color: green;
 }

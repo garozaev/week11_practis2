@@ -1,9 +1,9 @@
 const addTask = document.getElementById('todo_list');
 const inputTask = document.getElementById('to_do');
-const buttonClickTask = document.getElementById('button_todo');
-const finishList = document.getElementById('finish_list');
+const buttonAddTask = document.getElementById('button_todo');
+//const finishList = document.getElementById('finish_list');
 
-buttonClickTask.addEventListener('click', function () {
+buttonAddTask.addEventListener('click', function () {
     const newTask= document.createElement('li');
     newTask.classList.toggle('task');
     const textTask = inputTask.value; 
@@ -13,12 +13,13 @@ buttonClickTask.addEventListener('click', function () {
 } );
 
 addTask.addEventListener('click', function (evt) {
-    if (evt.target.addTask === 'task') {
-    const newLiOk = document.createElement('li');
-    newLiOk.classList.toggle('task_ok');
-    //const textTaskOk = inputTask.value;
-    newLiOk.textContent = 'Привет';
-    finishList.prepend(newLiOk);
-    //inputTask.value = '';
-    }
-} );
+    const targLi = evt.target.classList.toggle('li_fulfilled');
+    /*if (evt.target.tagName === 'LI');
+        const newLiOk = document.createElement ('li');
+        const textTask = targLi.value;
+        newLiOk.textContent = textTask;
+    finishList.prepend(newLiOk);*/
+}
+);
+
+
